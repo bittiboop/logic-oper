@@ -9,6 +9,11 @@ int main() {
 	//x++/x-- - post increment
 	//++x/--x - pre increment
 
-	cout << pow(2, 3) << endl;
+	int grn, cop , res;
+	cin >> grn >> cop;
+	res = cop / 100;
+	cop = cop % 100;
+	res = ++grn;
+	cout << grn << "grn" << cop << "cop." << endl;
 	return 0;
 }
