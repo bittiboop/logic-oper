@@ -9,6 +9,10 @@ int main() {
 	//x++/x-- - post increment
 	//++x/--x - pre increment
 
-	cout << pow(2, 3) << endl;
+	int year = 0;
+	int days = 365;
+	cin >> year;
+	(year % 4 == 0)? (year % 100 != 0 && ++days || (year % 100 == 0 && year % 400 == 0)) : (year % 100 == 0 && days || (year % 100 != 0 && year % 400 != 0));
+	cout << "In " << year << " year = " << days << "days" << endl;
 	return 0;
 }
