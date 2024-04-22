@@ -9,6 +9,13 @@ int main() {
 	//x++/x-- - post increment
 	//++x/--x - pre increment
 
-	cout << pow(2, 3) << endl;
+	int sec, hv, hod;
+	cout << "Enter seconds: ";
+	cin >> sec;
+	cout << "Seconds: " << sec % 60 << endl;
+	hv = sec / 60;
+	cout << "Minutes: " << hv % 60 << endl;
+	hod = hv / 60;
+	cout << "Hours: " << hod;
 	return 0;
 }
