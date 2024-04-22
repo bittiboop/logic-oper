@@ -11,9 +11,8 @@ int main() {
 
 	int grn, cop , res;
 	cin >> grn >> cop;
-	res = cop / 100;
-	cop = cop % 100;
-	res = ++grn;
-	cout << grn << "grn" << cop << "cop." << endl;
+	res = cop % 100;
+	grn = grn + (cop - res) / 100;
+	cout << grn << "grn" << res << "cop." << endl;
 	return 0;
 }
