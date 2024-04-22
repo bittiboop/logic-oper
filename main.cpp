@@ -1,5 +1,7 @@
+#define _USE_MATH_DEFINES
 #include <iostream>
 #include <cmath>
+
 //#include <math.h>
 using namespace std;
 
@@ -9,6 +11,8 @@ int main() {
 	//x++/x-- - post increment
 	//++x/--x - pre increment
 
-	cout << pow(2, 3) << endl;
+	float radius;
+	cin >> radius;
+	cout << "V: " << 4 / 3 * M_PI * pow(radius, 3) << endl;
 	return 0;
 }
