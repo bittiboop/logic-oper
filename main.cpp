@@ -9,6 +9,12 @@ int main() {
 	//x++/x-- - post increment
 	//++x/--x - pre increment
 
-	cout << pow(2, 3) << endl;
+	float scale, dist1;
+	cout << "Calculation of the distance between settlements.\n" << "Enter the output data:\n";
+	cout << "Map scale (number of kilometers in one centimeter) -> ";
+	cin >> scale;
+	cout << "Distance between points representing settlements(cm) -> ";
+	cin >> dist1;
+	cout << "Distance between settlements " << scale * dist1 << " km" << endl;
 	return 0;
 }
