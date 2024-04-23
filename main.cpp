@@ -8,7 +8,15 @@ int main() {
 	//--(-1) - increment operator
 	//x++/x-- - post increment
 	//++x/--x - pre increment
-
-	cout << pow(2, 3) << endl;
+	
+	int i;
+	float t;
+	cout << "Calculation of running speed.\n" << "Enter the length of the distance (meters) = ";
+	cin >> i;
+	cout << "\nEnter the time (min.sec) = ";
+	cin >> t;
+	cout << "Distance:" << i << "m." << endl;
+	int min = static_cast<int>(t);
+	cout << "Time:" <<
 	return 0;
 }
