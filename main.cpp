@@ -17,6 +17,8 @@ int main() {
 	cin >> t;
 	cout << "Distance:" << i << "m." << endl;
 	int min = static_cast<int>(t);
-	cout << "Time:" <<
+	int sec = static_cast<int>((t - min) * 100);
+	cout << "Time: " << min << "min. " << sec << "sec. = " << min * 60 + sec << " sec." << endl;
+	cout << "You ran at a speed of: " << i / sec << " km/h." << endl;
 	return 0;
 }
