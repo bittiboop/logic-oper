@@ -7,14 +7,18 @@ int main() {
 	//++(+1) - increment operator
 	//--(-1) - increment operator
 	//x++/x-- - post increment
-	//++x/--x - pre increment  
+	//++x/--x - pre increment
 
-
-	float num;
-	cout << "Enter the float number: " << endl;
-	cin >> num;
-	int grn = static_cast<int>(num);
-	int cop = static_cast<int>((num - grn) * 100);
-	cout << grn << " grn. " << cop << " cop." << endl;
+	int i;
+	float t;
+	cout << "Calculation of running speed.\n" << "Enter the length of the distance (meters) = ";
+	cin >> i;
+	cout << "\nEnter the time (min.sec) = ";
+	cin >> t;
+	cout << "Distance:" << i << "m." << endl;
+	int min = static_cast<int>(t);
+	int sec = static_cast<int>((t - min) * 100);
+	cout << "Time: " << min << "min. " << sec << "sec. = " << min * 60 + sec << " sec." << endl;
+	cout << "You ran at a speed of: " << i / sec << " km/h." << endl;
 	return 0;
 }
