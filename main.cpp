@@ -7,7 +7,8 @@ int main() {
 	//++(+1) - increment operator
 	//--(-1) - increment operator
 	//x++/x-- - post increment
-	//++x/--x - pre increment
+	//++x/--x - pre increment  
+
 
 	float num;
 	cout << "Enter the float number: " << endl;
